@@ -1,0 +1,52 @@
+\documentclass[11pt,landscape,a4paper,twocolumn]{article}
+
+\setlength{\columnsep}{20pt}
+
+\usepackage[
+	left=1cm, right=1cm,
+	top=1cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{kotex}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{import}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{array}
+\usepackage[normal]{engord}
+\usepackage[svgnames,table]{xcolor}
+
+\usepackage{minted}
+
+\setmonofont[Mapping=tex-text,BoldFont={*},ItalicFont={*},ItalicFeatures={FakeSlant=.2}]{DejaVuSansMono}
+
+\newcommand{\inputsrc}[1]{
+	\inputminted[fontsize=\scriptsize, mathescape, tabsize=4, linenos, numbersep=5pt]{cpp}{#1}
+}
+
+\begin{document}
+
+{\sf Teamnote of wookayin, for ACM-ICPC 2014}
+
+%\section{Geometry}
+%\inputsrc{src/geometry/basic.hpp}
+
+%\section{Math}
+
+%\subsection{BigInteger}
+%\inputsrc{src/math/bigint.hpp}
+
+%\subsection{Extended Euclidean}
+%\inputsrc{src/math/euclidean.hpp}
+
+%\subsection{Modular Inverse}
+%\inputsrc{src/math/modinv.hpp}
+
+
+\input{src/graph/graph}
+
+\end{document}

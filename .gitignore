@@ -1,3 +1,6 @@
+# Target
+teamnote.pdf
+
 # Compiled Object files
 *.slo
 *.lo
@@ -10,3 +13,9 @@
 *.lai
 *.la
 *.a
+
+# Latex
+*.log
+*.pyg
+*.aux
+*.toc
