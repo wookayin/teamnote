@@ -23,30 +23,33 @@
 \usepackage{minted}
 
 \setmonofont[Mapping=tex-text,BoldFont={*},ItalicFont={*},ItalicFeatures={FakeSlant=.2}]{DejaVuSansMono}
-
 \newcommand{\inputsrc}[1]{
 	\inputminted[fontsize=\scriptsize, mathescape, tabsize=4, linenos, numbersep=5pt]{cpp}{#1}
 }
 
+% Metadata
+\newcommand{\Title}{Teamnote of wookayin, for ACM-ICPC 2014}
+
 \begin{document}
 
-{\sf Teamnote of wookayin, for ACM-ICPC 2014}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\section{Geometry}
-%\inputsrc{src/geometry/basic.hpp}
+\begin{center}
+	\noindent
+	\sf\Large
+	\Title
+\end{center}
 
-%\section{Math}
+\tableofcontents
 
-%\subsection{BigInteger}
-%\inputsrc{src/math/bigint.hpp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Body goes here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsection{Extended Euclidean}
-%\inputsrc{src/math/euclidean.hpp}
-
-%\subsection{Modular Inverse}
-%\inputsrc{src/math/modinv.hpp}
-
-
-\input{src/graph/graph}
+\section{General}
+\subsection{vimrc}
+\inputsrc{src/basic/vimrc}
 
 \end{document}
